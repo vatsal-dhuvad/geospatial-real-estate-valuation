@@ -19,3 +19,7 @@ venv/
 # Generated reports
 reports/*.geojson
 reports/*.html
+
+# Python
+__pycache__/
+*.pyc
