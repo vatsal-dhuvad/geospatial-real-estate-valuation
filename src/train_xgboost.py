@@ -63,3 +63,34 @@ r2 = r2_score(
 print("MAE:", mae)
 print("RMSE:", rmse)
 print("R2:", r2)
+import matplotlib.pyplot as plt
+
+results = pd.DataFrame({
+    "Actual": y_test,
+    "Predicted": predictions
+})
+
+results["Error"] = (
+    results["Actual"]
+    - results["Predicted"]
+)
+
+print(
+    results.sort_values(
+        "Error",
+        key=abs,
+        ascending=False
+    ).head(10)
+)
+
+plt.scatter(
+    results["Actual"],
+    results["Predicted"]
+)
+
+plt.xlabel("Actual Price")
+plt.ylabel("Predicted Price")
+
+plt.title("Actual vs Predicted")
+
+plt.show()
