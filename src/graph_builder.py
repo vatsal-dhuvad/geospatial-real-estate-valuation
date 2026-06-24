@@ -15,3 +15,16 @@ distances, indices = knn.kneighbors(coords)
 print(indices[:5])
 
 print("KNN graph constructed successfully.")
+
+edges = []
+
+for i in range(len(indices)):
+    for j in indices[i]:
+
+        if i != j:
+
+            edges.append((i, j))
+
+print(edges[:10])
+
+print("Edges created successfully.")
