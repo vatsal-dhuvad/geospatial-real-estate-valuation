@@ -28,3 +28,19 @@ for i in range(len(indices)):
 print(edges[:10])
 
 print("Edges created successfully.")
+
+from sklearn.decomposition import PCA
+
+features = df.select_dtypes(
+    include=["number"]
+)
+
+pca = PCA(n_components=2)
+
+embeddings = pca.fit_transform(
+    features
+)
+
+print(embeddings[:5])
+
+print("Spatial embeddings generated.")
