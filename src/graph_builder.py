@@ -44,3 +44,19 @@ embeddings = pca.fit_transform(
 print(embeddings[:5])
 
 print("Spatial embeddings generated.")
+
+from sklearn.decomposition import PCA
+
+features = df.select_dtypes(
+    include=["number"]
+)
+
+pca = PCA(n_components=2)
+
+embeddings = pca.fit_transform(
+    features
+)
+
+print(embeddings[:5])
+
+print("Spatial embeddings generated.")
