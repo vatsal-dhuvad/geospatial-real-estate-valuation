@@ -60,3 +60,19 @@ embeddings = pca.fit_transform(
 print(embeddings[:5])
 
 print("Spatial embeddings generated.")
+import matplotlib.pyplot as plt
+
+plt.scatter(
+    embeddings[:,0],
+    embeddings[:,1]
+)
+
+plt.title(
+    "Spatial Embeddings"
+)
+
+plt.xlabel("Component 1")
+
+plt.ylabel("Component 2")
+
+plt.show()
