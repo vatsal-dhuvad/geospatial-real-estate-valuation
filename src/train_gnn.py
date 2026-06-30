@@ -21,3 +21,46 @@ data = Data(
 )
 
 print(data)
+import torch
+
+from torch_geometric.nn import GCNConv
+
+class GCN(torch.nn.Module):
+
+    def __init__(self):
+
+        super().__init__()
+
+        self.conv1 = GCNConv(
+            data.num_features,
+            16
+        )
+
+        self.conv2 = GCNConv(
+            16,
+            1
+        )
+
+    def forward(
+        self,
+        x,
+        edge_index
+    ):
+
+        x = self.conv1(
+            x,
+            edge_index
+        )
+
+        x = torch.relu(x)
+
+        x = self.conv2(
+            x,
+            edge_index
+        )
+
+        return x
+
+model = GCN()
+
+print(model)
