@@ -1,25 +1,79 @@
-# Data
+# ==========================
+# DATASETS (MANDATORY)
+# ==========================
 data/
+datasets/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
 
-# Models
+# ==========================
+# MODEL WEIGHTS (MANDATORY)
+# ==========================
 models/
+checkpoints/
 *.pt
 *.pth
 *.h5
+*.hdf5
+*.pkl
+*.joblib
 
-# Virtual Environment
-venv/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-
-# Generated reports
+# ==========================
+# GENERATED REPORTS
+# ==========================
 reports/*.geojson
 reports/*.html
+reports/*.png
+reports/*.jpg
+reports/*.jpeg
 
-# Python
+# ==========================
+# JUPYTER NOTEBOOK OUTPUTS
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# PYTHON CACHE
+# ==========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# ==========================
+# VIRTUAL ENVIRONMENTS
+# ==========================
+venv/
+env/
+ENV/
+.venv/
+
+# ==========================
+# IDE FILES
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# OPERATING SYSTEM FILES
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# LOG FILES
+# ==========================
+*.log
+
+# ==========================
+# STREAMLIT
+# ==========================
+.streamlit/secrets.toml
+
+# ==========================
+# TEMP FILES
+# ==========================
+temp/
+tmp/
