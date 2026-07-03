@@ -76,3 +76,11 @@ plt.xlabel("Component 1")
 plt.ylabel("Component 2")
 
 plt.show()
+for i in range(5):
+
+    print(
+        "House",
+        i,
+        "neighbors:",
+        indices[i]
+    )
