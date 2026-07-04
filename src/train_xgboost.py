@@ -94,3 +94,16 @@ plt.ylabel("Predicted Price")
 plt.title("Actual vs Predicted")
 
 plt.show()
+import matplotlib.pyplot as plt
+
+importance = model.feature_importances_
+
+feature_names = X.columns
+
+plt.figure(figsize=(10,5))
+
+plt.barh(feature_names[:10], importance[:10])
+
+plt.title("Feature Importance")
+
+plt.show()
