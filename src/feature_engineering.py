@@ -52,3 +52,10 @@ df["distance_to_center"] = df.apply(
 df.to_csv("data/feature_engineered.csv", index=False)
 
 print("Distance feature added.")
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12,10))
+sns.heatmap(df.corr(numeric_only=True), cmap="coolwarm")
+plt.title("Feature Correlation Heatmap")
+plt.show()
