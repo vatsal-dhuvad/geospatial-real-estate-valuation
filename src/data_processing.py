@@ -51,3 +51,11 @@ df.to_csv(
     "data/outlier_removed.csv",
     index=False
 )
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8,6))
+plt.hist(df["price"], bins=30)
+plt.title("House Price Distribution")
+plt.xlabel("Price")
+plt.ylabel("Frequency")
+plt.show()
