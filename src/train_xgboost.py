@@ -121,3 +121,8 @@ joblib.dump(
 )
 
 print("Model saved successfully.")
+loaded_model = joblib.load(
+    "models/xgboost_model.pkl"
+)
+
+print("Model loaded successfully.")
