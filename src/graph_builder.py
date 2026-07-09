@@ -84,3 +84,10 @@ for i in range(5):
         "neighbors:",
         indices[i]
     )
+from sklearn.cluster import KMeans
+
+kmeans = KMeans(n_clusters=5, random_state=42)
+
+df["cluster"] = kmeans.fit_predict(df[["lat", "long"]])
+
+print(df["cluster"].value_counts())
