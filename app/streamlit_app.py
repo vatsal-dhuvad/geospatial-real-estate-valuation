@@ -134,8 +134,8 @@ if page == "Overview":
     col2.metric("Project Weeks", "4")
     col3.metric("Core Model", "XGBoost + GNN")
 
-elif page == "Prediction Demo":
-    st.title("🏡 House Price Prediction Demo")
+elif page == "Prediction Price":
+    st.title("🏡 House Price Prediction")
 
     st.write(
         "This is a demonstration prediction interface based on engineered property features."
