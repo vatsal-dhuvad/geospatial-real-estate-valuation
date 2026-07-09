@@ -22,3 +22,7 @@ if st.button("Predict"):
     st.success(
         "Predicted Price: $500,000"
     )
+if st.button("Predict Price"):
+    st.success(
+        "Predicted Price Generated Successfully"
+    )
