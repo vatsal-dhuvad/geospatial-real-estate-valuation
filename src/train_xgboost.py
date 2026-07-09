@@ -113,3 +113,11 @@ plt.xlabel("Actual Prices")
 plt.ylabel("Predicted Prices")
 plt.title("Actual vs Predicted House Prices")
 plt.show()
+import joblib
+
+joblib.dump(
+    model,
+    "models/xgboost_model.pkl"
+)
+
+print("Model saved successfully.")
