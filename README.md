@@ -92,7 +92,7 @@ Streamlit Dashboard
 
 ## Weekly Engineering Roadmap
 
-Week 1 — Geospatial Data Acquisition and Processing
+## Week 1 — Geospatial Data Acquisition and Processing
 Issue #1
 
 Download King County Housing Dataset
