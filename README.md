@@ -1,14 +1,14 @@
 ## 🏠 Geospatial Real Estate Valuation via Spatial Embeddings
 Executive Problem Statement
 
-Traditional Automated Valuation Models (AVMs) rely heavily on tabular features such as:
+## Traditional Automated Valuation Models (AVMs) rely heavily on tabular features such as:
 
 Bedrooms
 Bathrooms
 Square footage
 Property condition
 
-However, real estate prices are strongly influenced by:
+## However, real estate prices are strongly influenced by:
 
 Neighboring properties
 Local market conditions
@@ -16,7 +16,7 @@ Nearby amenities
 Socio-economic environment
 Geographic location
 
-Traditional machine learning models such as Linear Regression and XGBoost struggle to capture these spatial dependencies.
+## Traditional machine learning models such as Linear Regression and XGBoost struggle to capture these spatial dependencies.
 
 This project addresses this challenge by combining:
 
@@ -27,7 +27,7 @@ Graph Neural Networks (GNNs)
 
 to model how surrounding properties influence house prices.
 
-Business Objective
+## Business Objective
 
 Develop a highly accurate real estate valuation engine for:
 
@@ -37,19 +37,19 @@ Investment Strategists
 Property Analytics Companies
 Key Performance Indicators
 
-Project success is measured using:
+## Project success is measured using:
 
 Mean Absolute Percentage Error (MAPE)
 Mean Absolute Error (MAE)
 Root Mean Squared Error (RMSE)
 R² Score
 
-The final objective is to demonstrate that spatial learning methods outperform traditional machine learning baselines.
+## The final objective is to demonstrate that spatial learning methods outperform traditional machine learning baselines.
 
-Dataset
+## Dataset
 King County Housing Dataset
 
-Contains:
+## Contains:
 
 House Price
 Bedrooms
@@ -63,11 +63,11 @@ Longitude
 Construction Year
 Renovation Year
 
-Dataset Source:
+## Dataset Source:
 
 https://www.kaggle.com/datasets/harlfoxem/housesalesprediction
 
-Project Architecture
+## Project Architecture
 Raw Housing Data
         ↓
 Data Cleaning
@@ -89,7 +89,9 @@ PyTorch Geometric Dataset
 Graph Neural Network
         ↓
 Streamlit Dashboard
-Weekly Engineering Roadmap
+
+## Weekly Engineering Roadmap
+
 Week 1 — Geospatial Data Acquisition and Processing
 Issue #1
 
@@ -116,7 +118,8 @@ Clean dataset
 GeoDataFrame
 Interactive map
 Initial GitHub commits
-Week 2 — Feature Engineering and Baseline ML
+
+## Week 2 — Feature Engineering and Baseline ML
 Issue #6
 
 House Age Feature Engineering
@@ -142,7 +145,8 @@ Feature engineered dataset
 Baseline XGBoost model
 MAE, RMSE, MAPE metrics
 Error visualization
-Week 3 — Spatial Embeddings and Graph Construction
+
+## Week 3 — Spatial Embeddings and Graph Construction
 Issue #11
 
 KNN Graph Construction
@@ -168,7 +172,8 @@ KNN graph
 Edge list
 Graph dataset
 Spatial embeddings
-Week 4 — GNN Modeling and Dashboard
+
+## Week 4 — GNN Modeling and Dashboard
 Issue #16
 
 Graph Neural Network Training
@@ -197,23 +202,23 @@ Final documentation
 User Personas
 Real Estate Appraiser
 
-Needs:
+## Needs:
 
 Accurate local price estimation
 Comparable neighboring sales
 
-Output:
+## Output:
 
 Predicted price
 Top neighboring properties influencing valuation
 Investment Strategist
 
-Needs:
+## Needs:
 
 Hotspot detection
 Undervalued neighborhood identification
 
-Output:
+## Output:
 
 Spatial heatmaps
 Neighborhood trend analysis
@@ -256,7 +261,7 @@ geospatial-real-estate-valuation/
 └── .gitignore
 Version Control Strategy
 
-This project follows enterprise-grade ML engineering practices:
+## This project follows enterprise-grade ML engineering practices:
 
 GitHub Issues for task tracking
 GitHub Projects Kanban Board
@@ -271,12 +276,12 @@ model: train xgboost baseline (fixes #8)
 graph: build knn graph (fixes #11)
 Author
 
-Vatsal Dhuvad
+## Vatsal Dhuvad
 
-Data Science & Machine Learning Intern
+ Data Science & Machine Learning Intern
 Infotact Solutions
 
-Gandhinagar, Gujarat, India
+ Gandhinagar, Gujarat, India
 
 License
 
