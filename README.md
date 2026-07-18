@@ -1,4 +1,4 @@
-##🏠 Geospatial Real Estate Valuation via Spatial Embeddings
+## 🏠 Geospatial Real Estate Valuation via Spatial Embeddings
 Executive Problem Statement
 
 Traditional Automated Valuation Models (AVMs) rely heavily on tabular features such as:
